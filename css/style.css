@@ -1,14 +1,42 @@
+* {
+    font-family: 'Raleway', helvetica, sans-serif;
+}
+
 header {
     background-color: black;
     height: 41px;
     width: 100%;
 }
 
+nav {
+    float: right;
+    color: white;
+}
+
 .container {
-    max-width: 980px;
+    max-width: 1055px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 h1 {
     color: white;
+    float: left;
+    padding-top: 12px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+li {
+    float: left;
+    padding-top: 12px;
+    font-weight: 900;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+h1 > span {
+    color: blue;
+    font-weight: 900;
+    font-size: 15px;
 }
