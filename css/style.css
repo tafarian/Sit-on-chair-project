@@ -1,0 +1,14 @@
+header {
+    background-color: black;
+    height: 41px;
+    width: 100%;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+}
