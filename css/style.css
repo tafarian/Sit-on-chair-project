@@ -4,7 +4,7 @@
 
 header {
     background-color: black;
-    height: 41px;
+    height: 40px;
     width: 100%;
 }
 
@@ -16,7 +16,6 @@ nav {
 .container {
     max-width: 1070px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 h1 {
@@ -27,12 +26,50 @@ h1 {
     font-size: 15px;
 }
 
-li {
+.menu > li {
     float: left;
-    padding-top: 12px;
+    line-height: 40px;
+    position: relative;
+    width: 160px;
+    text-align: center;
     font-weight: 900;
     font-size: 15px;
-    padding-left: 10px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.submenu {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    padding-top: 10px;
+    display: none;
+}
+
+li:hover>.submenu {
+    display:block;
+}
+
+.submenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    height: 0;
+    width: 0;
+    margin: 0 auto;
+    top: -10px;
+    left: 70px;
+}
+
+.submenu li {
+    background-color: black;
 }
 
 h1 > span {
@@ -42,31 +79,71 @@ h1 > span {
     margin-top: 10px;
 }
 
-section > div > span {
+.sliderArrow {
     color: #24ba9f;
     font-size: 70px;
     font-weight: 100;
     float:left;
     padding-top: 220px;
     padding-left: 15px;
+    width: 10%;
 }
 
-black_chair {
+.blackChair {
     float:left;
+    width: 40%;
+    height: 400px;
+    background: url(./../images/black_chair.png) no-repeat;
+    margin: 100px 0 0 0;
+    background-size: 130%;
+    background-position: right -5px bottom 20px;
 }
 
-img {
-    margin-top: 70px;
-    width: 545px;
-    height: 420px;
+.textArea {
+    float:left;
+    width: 40%;
+    margin-top: 100px;
+    margin-left: -60px;
+    margin-right: 60px;
+    height: 400px;
 }
 
-section {
+h2 {
+    color: black;
+    padding-top: 45px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2 > span {
+    color: #24ba9f;
+    font-weight: 900;
+}
+
+.textArea > p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.textArea > button {
+    width: 240px;
+    height: 50px;
+    background-color: #24ba9f;
+    color: white;
+    margin: 40px 0 0 90px;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+#slider {
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 63%, rgba(188,188,188,0.73) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 63%,rgba(188,188,188,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 63%,rgba(188,188,188,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#babcbcbc',GradientType=0 ); /* IE6-9 */
     copy
-            Current gradient has opacity, switching color format to 'rgba'
-
+            Current gradient has opacity, switching color format to 'rgba';
+    height: 500px;
 }
