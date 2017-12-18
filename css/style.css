@@ -228,18 +228,14 @@ article .container p {
     position: absolute;
 }
 
-.smallCircle:after {
-    content: '';
-    display: block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    margin-left: -11px;
-    margin-top: -11px;
-    top: 50%;
-    left: 50%
-    background-color: #bfbfbf;
+.innerCircle {
+    width: 25px;
+    height: 25px;
     position: absolute;
+    left: 14px;
+    top: 14px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
 }
 
 .circle {
@@ -262,7 +258,7 @@ article .container p {
     height: 500px;
     float: left;
     border: 2px solid #bfbfbf;
-    margin-left:35px;
+    margin-left:33px;
     margin-top:50px;
     position:relative;
     color: #7a7a7a;
@@ -281,7 +277,7 @@ article .container p {
     font-size: 45px;
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 24%;
 }
 
 .option .circle span:last-child {
@@ -305,11 +301,11 @@ article .container p {
     width: 100%;
 }
 
-.option ul li:first-child {
+.option ul li:nth-child(odd) {
     background-color: #d4d4d4;
 }
 
-.option ul li:last-child {
+.option ul li:nth-child(even) {
     background-color: #f1f1f1;
 }
 
