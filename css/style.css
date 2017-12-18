@@ -30,10 +30,10 @@ h1 {
     float: left;
     line-height: 40px;
     position: relative;
-    width: 160px;
     text-align: center;
     font-weight: 900;
     font-size: 15px;
+    padding: 1px 20px;
 }
 
 .menu a {
@@ -65,7 +65,7 @@ li:hover>.submenu {
     width: 0;
     margin: 0 auto;
     top: -10px;
-    left: 70px;
+    left: 90px;
 }
 
 .submenu li {
@@ -73,7 +73,7 @@ li:hover>.submenu {
 }
 
 h1 > span {
-    color: #24ba9f;
+    color: #2ae697;
     font-weight: 900;
     font-size: 15px;
     margin-top: 10px;
@@ -87,10 +87,12 @@ h1 > span {
     copy
             Current gradient has opacity, switching color format to 'rgba';
     height: 500px;
+    max-height: auto;
+    margin-top: 40px;
 }
 
 .sliderArrow {
-    color: #24ba9f;
+    color: #2ae697;
     font-size: 70px;
     font-weight: 100;
     float:left;
@@ -128,7 +130,7 @@ h2 {
 }
 
 h2 > span {
-    color: #24ba9f;
+    color: #2ae697;
     font-weight: 900;
 }
 
@@ -141,7 +143,7 @@ h2 > span {
 .textArea > button {
     width: 240px;
     height: 50px;
-    background-color: #24ba9f;
+    background-color: #2ae697;
     color: white;
     margin: 40px 0 0 90px;
     border-radius: 15px;
@@ -154,32 +156,173 @@ h2 > span {
     width: 31%;
     margin-left: 2.333%;
     height: 225px;
-    border: 1px solid red;
 }
 
 .firstPic {
-    background-image: url(./../images/box1_img.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url(./../images/box1_img.jpg); top center/cover;
 
 }
 
 .secondPic {
-    background-image: url(./../images/box2_img.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url(./../images/box2_img.jpg); top center/cover;
 }
 
 .whiteBackground {
-    background-color: rgba(255, 255, 255, .4);
-    height: 20%;
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-top: 150px;
+}
+
+.whiteBackground p {
+    font-weight: bold;
+    font-size: 16px;
+    width: 180px;
+    border-bottom: 7px solid #2ae697;
+    padding: 25px 0 0 20px;
+}
+
+.container .smallBox:last-of-type {
+    border: 1px solid #d7d3d7;
+}
+
+.smallBox p {
+    font-weight: bold;
+    font-size: 16px;
+    width: 180px;
+    border-bottom: 7px solid #2ae697;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.smallBox span {
+    margin-left: 15px;
+    padding-top: 15px;
+    color: rgb(151, 154, 150);
+}
+
+#prices {
+    height: 720px;
+    background-color: #f1f1f1;
+}
+
+article .container p {
+    font-weight: bold;
+    font-size: 16px;
+    width: 180px;
+    border-bottom: 7px solid #2ae697;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.option .smallCircle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-left: -28px;
+    margin-top: -28px;
+    top: -2%;
+    left: 50%;
+    border: 2px solid #bfbfbf;
+    background-color: white;
+    position: absolute;
+}
+
+.smallCircle:after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-left: -11px;
+    margin-top: -11px;
+    top: 50%;
+    left: 50%
+    background-color: #bfbfbf;
+    position: absolute;
+}
+
+.circle {
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #bfbfbf;
+    position: absolute;
+    margin-left: -65px;
+    left: 50%;
+    font-size: 16px;
+    font-weight: 700px;
+    color: #bfbfbf;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.plans {
+    width: 30%;
+    height: 500px;
+    float: left;
+    border: 2px solid #bfbfbf;
+    margin-left:35px;
+    margin-top:50px;
+    position:relative;
+    color: #7a7a7a;
+    background-color: #ffffff;
+}
+
+.plans h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #2ae697;
+    margin-top: 25px;
+}
+
+.option .circle span:first-child {
+    font-size: 45px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.option .circle span:last-child {
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.option ul {
+    position: absolute;
+    top: 200px;
+    list-style: none;
     width: 100%;
 }
 
-.whiteBackground > p {
-    font-weight: bold;
+.option ul li {
+    text-align: center;
+    line-height: 45px;
     font-size: 18px;
-    width: 180px;
-    border-bottom: 8px solid #24ba9f;
-    padding: 150px 0 0 20px;
+    width: 100%;
+}
+
+.option ul li:first-child {
+    background-color: #d4d4d4;
+}
+
+.option ul li:last-child {
+    background-color: #f1f1f1;
+}
+
+.option button {
+    display: block;
+    width: 126px;
+    height: 35px;
+    background-color: #2ae697;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -63px;
+    left: 50%;
+    top: 89%;
 }
