@@ -47,10 +47,11 @@ h1 {
     right: 0;
     padding-top: 10px;
     display: none;
+    padding-left: 40px;
 }
 
-li:hover>.submenu {
-    display:block;
+li:hover > .submenu {
+    display: block;
 }
 
 .submenu::before {
@@ -80,29 +81,38 @@ h1 > span {
 }
 
 #slider {
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 63%, rgba(188,188,188,0.73) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 63%,rgba(188,188,188,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 63%,rgba(188,188,188,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#babcbcbc',GradientType=0 ); /* IE6-9 */
-    copy
-            Current gradient has opacity, switching color format to 'rgba';
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#babcbcbc', GradientType=0); /* IE6-9 */
+    copy Current gradient has opacity, switching color format to 'rgba';
     height: 500px;
     max-height: auto;
     margin-top: 40px;
 }
 
-.sliderArrow {
+.leftSliderArrow {
     color: #2ae697;
     font-size: 70px;
     font-weight: 100;
-    float:left;
+    float: left;
     padding-top: 220px;
     padding-left: 15px;
     width: 10%;
 }
 
+.rightSliderArrow {
+    color: #2ae697;
+    font-size: 70px;
+    font-weight: 100;
+    float: left;
+    padding-top: 220px;
+    padding-left: 80px;
+    width: 10%;
+}
+
 .blackChair {
-    float:left;
+    float: left;
     width: 40%;
     height: 400px;
     background: url(./../images/black_chair.png) no-repeat;
@@ -112,10 +122,10 @@ h1 > span {
 }
 
 .textArea {
-    float:left;
-    width: 40%;
+    float: left;
+    width: 35%;
     margin-top: 100px;
-    margin-left: -60px;
+    margin-left: -10px;
     margin-right: 60px;
     height: 400px;
 }
@@ -159,12 +169,14 @@ h2 > span {
 }
 
 .firstPic {
-    background-image: url(./../images/box1_img.jpg); top center/cover;
+    background-image: url(./../images/box1_img.jpg);
+    top center/cover;
 
 }
 
 .secondPic {
-    background-image: url(./../images/box2_img.jpg); top center/cover;
+    background-image: url(./../images/box2_img.jpg);
+    top center/cover;
 }
 
 .whiteBackground {
@@ -195,10 +207,9 @@ h2 > span {
     margin-left: 15px;
 }
 
-.smallBox span {
-    margin-left: 15px;
-    padding-top: 15px;
+.textBox {
     color: rgb(151, 154, 150);
+    padding-left: 15px;
 }
 
 #prices {
@@ -206,13 +217,14 @@ h2 > span {
     background-color: #f1f1f1;
 }
 
-article .container p {
+.priceList > p {
     font-weight: bold;
     font-size: 16px;
     width: 180px;
     border-bottom: 7px solid #2ae697;
     margin-top: 35px;
     margin-bottom: 20px;
+    margin-left: 35px;
 }
 
 .option .smallCircle {
@@ -239,7 +251,7 @@ article .container p {
 }
 
 .circle {
-    width:130px;
+    width: 130px;
     height: 130px;
     border-radius: 50%;
     border: 2px solid #bfbfbf;
@@ -258,11 +270,91 @@ article .container p {
     height: 500px;
     float: left;
     border: 2px solid #bfbfbf;
-    margin-left:33px;
-    margin-top:50px;
-    position:relative;
+    margin-left: 33px;
+    margin-top: 50px;
+    position: relative;
     color: #7a7a7a;
     background-color: #ffffff;
+}
+
+.smallCircleBlue {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-left: -28px;
+    margin-top: -28px;
+    top: -2%;
+    left: 50%;
+    border: 2px solid #2ae697;
+    background-color: #2ae697;
+    position: absolute;
+}
+
+.innerCircleBlue {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.plansBlue {
+    width: 30%;
+    height: 500px;
+    float: left;
+    border: 2px solid #2ae697;
+    margin-left: 33px;
+    margin-top: 50px;
+    position: relative;
+    color: #7a7a7a;
+    background-color: #2ae697;
+}
+
+#buttonBlue {
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+#textBlue {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.circleBlue {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #2ae697;
+    position: absolute;
+    margin-left: -65px;
+    left: 50%;
+    font-size: 16px;
+    font-weight: 700px;
+    color: #2ae697;
+    padding-top: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+.circleBlue span:first-child {
+    font-size: 45px;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+}
+
+.circleBlue span:last-child {
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
 }
 
 .plans h3 {
@@ -271,6 +363,7 @@ article .container p {
     text-align: center;
     color: #2ae697;
     margin-top: 25px;
+    font-weight: bold;
 }
 
 .option .circle span:first-child {
@@ -321,4 +414,165 @@ article .container p {
     margin-left: -63px;
     left: 50%;
     top: 89%;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 240px;
+    border-bottom: 7px solid #2ae697;
+    margin-top: 15px;
+}
+
+.form {
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+#name, #email, #message {
+    border: 1px solid #2ae697;
+    display: block;
+    width: 100%;
+    height: 65px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding: 15px;
+    font-weight: lighter;
+}
+
+::placeholder {
+    color: #bfbfbf;
+}
+
+#message {
+    resize: none;
+    height: 180px;
+}
+
+.rightForm {
+    float: left;
+    width: 48%;
+}
+
+.redChair {
+    background-image: url("./../images/red_chair.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    margin-left: 145px;
+}
+
+.checkboxDiv {
+    margin-left: 130px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    background: white;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    border: 1px solid #2ae697;
+}
+
+input[type=checkbox]:checked + label {
+    background-image: url("./../images/form_ok.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
+.checkboxText {
+    float: left;
+    width: 331px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #bfbfbf;
+    padding-left: 50px;
+}
+
+.send {
+    width: 334px;
+    height: 60px;
+    font-size: 26px;
+    color: white;
+    background-color: #2ae697;
+    margin-top: 25px;
+    margin-left: 130px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.footerText {
+    float: left;
+    color: #959595;
+    font-weight: bolder;
+}
+
+.flickr {
+    width: 35px;
+    height: 35px;
+    background-image: url("./../images/flickr.png");
+    display: inline-block;
+}
+
+.vimeo {
+    width: 35px;
+    height: 35px;
+    background-image: url("./../images/vimeo.png");
+    display: inline-block;
+}
+
+.pinterest {
+    width: 35px;
+    height: 35px;
+    background-image: url("./../images/pinterest.png");
+    display: inline-block;
+}
+
+.twitter {
+    width: 35px;
+    height: 35px;
+    background-image: url("./../images/twitter.png");
+    display: inline-block;
+}
+
+.logos {
+    float: left;
+    margin-right: 80px;
+}
+
+.footerText {
+    float: left;
+    margin-right: 15px;
+    line-height: 53px;
+}
+
+h5 {
+    float: right;
+    color: #959595;
+    line-height: 53px;
+}
+
+.footerText h5 p {
+    color: #959595;
+    font-weight: bold;
+    display: inline;
+}
+
+.footerRight {
+    float: right;
 }

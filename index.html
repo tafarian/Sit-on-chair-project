@@ -30,16 +30,17 @@
 </header>
 
 <section id="slider">
-        <div class="container clearfix">
-            <span class="sliderArrow">&lt;</span>
-            <article class="blackChair"></article>
-            <article class="textArea">
-                <h2>SIT <span>ON</span> OUR <span>CHAIR</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor ante sit amet augue ornare, vitae finibus orci lacinia. Integer malesuada finibus erat, ac venenatis purus ornare et.</p>
-                <button><p>ZOBACZ WIĘCEJ</p></button>
-            </article>
-            <span class="sliderArrow">&gt;</span>
-        </div>
+    <div class="container clearfix">
+        <span class="leftSliderArrow">&lt;</span>
+        <article class="blackChair"></article>
+        <article class="textArea">
+            <h2>SIT <span>ON</span> OUR <span>CHAIR</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor ante sit amet augue ornare,
+                vitae finibus orci lacinia. Integer malesuada finibus erat, ac venenatis purus ornare et.</p>
+            <button><p>ZOBACZ WIĘCEJ</p></button>
+        </article>
+        <span class="rightSliderArrow">&gt;</span>
+    </div>
 
 </section>
 
@@ -58,19 +59,22 @@
             </div>
         </span>
 
-        <span class="smallBox">
+        <div class="smallBox">
             <p>Finds all inputs</p>
 
-            <span>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have ben linked.<br><br>Notice there is no change when clicking the checkboxes since no click event have been</span>
-        </span>
-
-    </div>
+            <div class="textBox"> Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change
+                when clicking the checkboxes since no click events have ben linked.<br><br>Notice there is no change
+                when clicking the checkboxes since no click event have been
+            </div>
+        </div>
 
 </section>
 
 <article id="prices">
     <div class="container clearfix">
-        <p>Cennik</p>
+        <div class="priceList">
+            <p>CENNIK</p>
+        </div>
         <div class="plans">
             <div class="option">
                 <div class="smallCircle">
@@ -89,13 +93,13 @@
                 <button type="button">DOŁĄCZ</button>
             </div>
         </div>
-        <div class="plans">
+        <div class="plansBlue">
             <div class="option">
-                <div class="smallCircle">
-                    <div class="innerCircle"></div>
+                <div class="smallCircleBlue">
+                    <div class="innerCircleBlue"></div>
                 </div>
-                <h3>STANDARD PLAN</h3>
-                <div class="circle">
+                <h3 id="textBlue">STANDARD PLAN</h3>
+                <div class="circleBlue">
                     <span>95</span>
                     <span>99</span>
                     PLN/MSC
@@ -105,7 +109,7 @@
                     <li>Serwis</li>
                     <li>Gwarancja 5 lat</li>
                 </ul>
-                <button type="button">DOŁĄCZ</button>
+                <button type="button" id="buttonBlue">DOŁĄCZ</button>
             </div>
         </div>
         <div class="plans">
@@ -130,6 +134,46 @@
         </div>
     </div>
 </article>
+
+<article>
+    <div class="container clearfix">
+        <div class="form">
+            <h4>KONTAKT</h4>
+            <form action="/action_page.php">
+                <input type="text" name="name" placeholder="Imię" id="name"><br>
+                <input type="email" name="email" placeholder="email" id="email"><br>
+                <textarea rows="5" name="message" placeholder="Wiadomość" id="message"></textarea>
+            </form>
+        </div>
+        <div class="rightForm">
+            <div class="redChair"></div>
+            <div class="checkboxDiv clearfix">
+                <input type="checkbox" name='thing' value='valuable' id="thing"/>
+                <label for="thing" value="true">
+                    <span class="checkboxText">Zgadzam się na przetwarzanie danych osobowych</span>
+            </div>
+            <button type="button" class="send">WYŚLIJ</button>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <div class="container clearfix">
+        <div class="footerText">Copyright 2014 | All Rights Reserved. - Sit On Chair
+        </div>
+        <div class="footerRight clearfix">
+            <div class="logos">
+                <div class="flickr"></div>
+                <div class="vimeo"></div>
+                <div class="pinterest"></div>
+                <div class="twitter"></div>
+            </div>
+            <div class="footerText">
+                <h5>SIT <p>ON</p> CHAIR</h5>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
