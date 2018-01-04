@@ -80,7 +80,7 @@ h1 > span {
     margin-top: 10px;
 }
 
-#slider {
+#sliderBckgrnd {
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 63%, rgba(188, 188, 188, 0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -111,14 +111,27 @@ h1 > span {
     width: 10%;
 }
 
-.blackChair {
+.imgs {
     float: left;
     width: 40%;
     height: 400px;
-    background: url(./../images/black_chair.png) no-repeat;
     margin: 100px 0 0 0;
     background-size: 130%;
     background-position: right -5px bottom 20px;
+}
+
+.slider ul{
+    list-style: none;
+    width: 400px;
+    height: 200px;
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible{
+    display: inline-block;
 }
 
 .textArea {
@@ -205,6 +218,10 @@ h2 > span {
     border-bottom: 7px solid #2ae697;
     margin-top: 20px;
     margin-left: 15px;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 .textBox {
