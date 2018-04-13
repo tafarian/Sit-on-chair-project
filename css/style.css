@@ -593,3 +593,7 @@ h5 {
 .footerRight {
     float: right;
 }
+
+.galleryBox {
+    border: 1px solid #d7d3d7;
+}
