@@ -48,6 +48,7 @@ h1 {
     padding-top: 10px;
     display: none;
     padding-left: 40px;
+    z-index: 10;
 }
 
 li:hover > .submenu {
