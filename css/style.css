@@ -612,3 +612,22 @@ h5 {
 .blurOut img:hover {
     -webkit-filter: blur(0px);
 }
+
+.box {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.historyDiv {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.historyDiv > p {
+    font-style: italic;
+}
+
+h6 {
+    font-size: 24px;
+    font-weight: 600;
+}
