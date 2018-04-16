@@ -630,11 +630,22 @@ h6 {
 .teamDiv {
     margin-left: 15px;
     border-bottom: 4px solid #2ae697;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .photo {
     width: 150px;
     height: 150px;
     font-size: 140px;
+    float: left;
+}
+
+.bio p {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.bio span {
+    font-style: italic;
 }
