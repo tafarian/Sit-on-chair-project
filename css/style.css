@@ -613,11 +613,6 @@ h5 {
     -webkit-filter: blur(0px);
 }
 
-.box {
-    margin-top: 25px;
-    margin-left: 15px;
-}
-
 .historyDiv {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -630,4 +625,16 @@ h5 {
 h6 {
     font-size: 24px;
     font-weight: 600;
+}
+
+.teamDiv {
+    margin-left: 15px;
+    border-bottom: 4px solid #2ae697;
+    padding-bottom: 5px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    font-size: 140px;
 }
